@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> React Demo </title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="../static/css/index.css">
+  </head>
+  <body>
+    <div id="react-logo" class="center-er">
+      <img height="400vmin" src="../static/images/logo.svg" style="animation: rotation 20s infinite linear" />
+      <div style="flex-basis:100%;height:0;"> </div>
+      <!-- style="animation: reveal0 7s linear" -->
+      <h3> The Power </h3>
+      <div style="flex-basis:100%;height:0;"> </div>
+      <!-- style="animation: reveal1 3s infinite linear"-->
+      <h1> OF REACT </h1>
+      <div style="flex-basis:100%;height:0;"> </div>
+      <textarea id="t-area" onchange="iframeEditor()"></textarea>
+      <iframe srcdoc="" id="if"></iframe>
+      <script src="../static/js/index.js"></script>
+  </body>
+</html>
