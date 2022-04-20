@@ -7,20 +7,29 @@
 
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <!-- stylesheet link -->
     <link rel="stylesheet" href="../static/css/index.css">
-
   </head>
-  <body>
+  <body style="background-color:black;animation:pulse 2.5s linear 2 2s, final-pulse 3s linear 5s;">
     <div id="react-logo" class="center-er">
+      <img height="325vmin" src="../static/images/logo.svg" style="position:relative;animation: rotation 20s infinite linear, reveal-from-halfway 2s linear" />
+      <div style="flex-basis:100%;height:0;"> </div>
 
-      <img height="400vmin" src="../static/images/logo.svg" style="position:relative;animation: rotation 20s linear infinite , from-top 1.5s linear" />
+      <div id="page-content" style="animation: reveal-quick 10s">
+      <p style="display:inline;"> Code Editor </p>
+      <p style="display:inline;">Div tag with id "root" provided</p>
+      <div style="flex-basis:100%;height:0;"> </div>
+
       <div style="flex-basis:100%;height:0;"> </div>
 
       <textarea id="t-area" onchange="iframeEditor()"></textarea>
       <iframe srcdoc="" id="if"></iframe>
+      <!-- figure out a way to increase vertical distance between components -->
+      <div style="flex-basis:100%;height:10%;"> </div>
+
+      <textarea id="t-areaComp" onchange="iframeEditor()"></textarea>
+      <iframe srcdoc="" id="ifComp"></iframe>
       <script src="../static/js/index.js"></script>
+    </div>
 
   </body>
 </html>

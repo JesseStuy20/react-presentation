@@ -15,21 +15,17 @@
 					 gap: 15%;
 }
 
-@keyframes from-top {
-
+@keyframes reveal-from-halfway {
 	0% {
 		opacity: 0;
-		bottom:50%
 	}
 
 	50% {
-		opacity: 0.5;
-		bottom:25%
+		opacity: 0;
 	}
 
 	100% {
 		opacity: 1;
-		bottom: 0%;
 	}
 }
 
@@ -40,5 +36,71 @@
 
 	100% {
 		opacity: 1;
+	}
+}
+
+p {
+	color: white;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: black;
+	}
+
+	0.01% {
+		background-color: white;
+	}
+
+	9.99% {
+		background-color: white;
+	}
+
+	10% {
+		background-color:black;
+	}
+
+	50% {
+		background-color: black;
+	}
+
+	 50.01% {
+		 background-color: white;
+	 }
+
+	 59.99% {
+		 background-color: white;
+	 }
+
+	 60% {
+		 background-color: black;
+	 }
+}
+
+@keyframes reveal-quick {
+	0% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	95% {
+		opacity: 1;
+	}
+}
+
+@keyframes final-pulse {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: black;
 	}
 }

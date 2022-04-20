@@ -14,7 +14,7 @@ function iframeEditor() {
       <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     </head>
-    <body>
+    <body style='color:white;'>
       <div id="root"></div>
       <p id="error"> </p>
       <script type="text/babel">try{`+text+`} catch(error){document.getElementById('error').innerHTML=error;}</script>
