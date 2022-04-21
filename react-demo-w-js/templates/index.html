@@ -9,26 +9,39 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="../static/css/index.css">
   </head>
-  <body style="background-color:black;animation:pulse 2.5s linear 2 2s, final-pulse 3s linear 5s;">
+  <body style="background-color:black;animation:pulse 1.25s linear 3 2s, final-pulse 3s linear 5.75s;">
     <div id="react-logo" class="center-er">
-      <img height="325vmin" src="../static/images/logo.svg" style="position:relative;animation: rotation 20s infinite linear, reveal-from-halfway 2s linear" />
+      <img height="325vmin" src="../static/images/logo.svg" style="color:blue;position:relative;animation: rotation 20s infinite linear, reveal-from-halfway 2s linear;" />
       <div style="flex-basis:100%;height:0;"> </div>
 
-      <div id="page-content" style="animation: reveal-quick 10s">
-      <p style="display:inline;"> Code Editor </p>
-      <p style="display:inline;">Div tag with id "root" provided</p>
-      <div style="flex-basis:100%;height:0;"> </div>
+      <div id="page-content" style="animation: reveal-quick 8.75s;width:100%;">
+      <div class="center-er">
+        <p style="display:inline;animation: text-reveal-quick 8.75s;"> Code Editor </p>
+        <p style="display:inline;animation: text-reveal-quick 8.75s;">Div tag with id "root" provided</p>
+        <div style="flex-basis:100%;height:0;"> </div>
+      </div>
 
       <div style="flex-basis:100%;height:0;"> </div>
 
-      <textarea id="t-area" onchange="iframeEditor()"></textarea>
-      <iframe srcdoc="" id="if"></iframe>
+      <div class="center-er">
+        <textarea id="t-area" onchange="iframeEditor()"></textarea>
+        <iframe srcdoc="" id="if"></iframe>
+      </div>
       <!-- figure out a way to increase vertical distance between components -->
       <div style="flex-basis:100%;height:10%;"> </div>
 
-      <textarea id="t-areaComp" onchange="iframeEditor()"></textarea>
-      <iframe srcdoc="" id="ifComp"></iframe>
+      <div class="center-er">
+        <p style="display:inline;animation: text-reveal-quick 8.75s;"> Comp. Checker </p>
+        <p style="display:inline;animation: text-reveal-quick 8.75s;">If blank, there is no error</p>
+        <div style="flex-basis:100%;height:0;"> </div>
+      </div>
+
+      <div class="center-er">
+        <textarea id="t-areaComp" onchange="iframeEditor()"></textarea>
+        <iframe srcdoc="" id="ifComp"></iframe>
+      </div>
       <script src="../static/js/index.js"></script>
+      </div>
     </div>
 
   </body>
