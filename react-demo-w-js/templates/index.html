@@ -15,10 +15,15 @@
       <div style="flex-basis:100%;height:0;"> </div>
 
       <div id="page-content" style="animation: reveal-quick 8.75s;width:100%;">
-      <div class="center-er">
-        <p style="display:inline;animation: text-reveal-quick 8.75s;"> Code Editor </p>
-        <p style="display:inline;animation: text-reveal-quick 8.75s;">Div tag with id "root" provided</p>
+        <div class="center-er"><p id="help-text" style="animation: text-reveal-quick 8.75s;">After you are done writing your class declarations, include the following letters EXACTLY:</p></div>
         <div style="flex-basis:100%;height:0;"> </div>
+        <div class="center-er"><p style="animation: text-reveal-quick 8.75s;">//c</p></div>
+        <div style="flex-basis:100%;height:0;"> </div>
+        <div class="center-er"> <p style="animation: text-reveal-quick 8.75s;"> NOTE: When you change your Code Editor code, be sure to change your Comp Checker code (hit space bar, then click outside the box). This will cause the program to update. </p> </div>
+        <div class="center-er">
+          <p style="display:inline;animation: text-reveal-quick 8.75s;"> Code Editor </p>
+          <p style="display:inline;animation: text-reveal-quick 8.75s;">Div tag with id "root" provided</p>
+          <div style="flex-basis:100%;height:0;"> </div>
       </div>
 
       <div style="flex-basis:100%;height:0;"> </div>
@@ -37,7 +42,7 @@
       </div>
 
       <div class="center-er">
-        <textarea id="t-areaComp" onchange="iframeEditor()"></textarea>
+        <textarea id="t-areaComp" onchange="iframeComp()"></textarea>
         <iframe srcdoc="" id="ifComp"></iframe>
       </div>
       <script src="../static/js/index.js"></script>
